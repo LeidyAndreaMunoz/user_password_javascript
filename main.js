@@ -57,11 +57,19 @@ var password_prompt = prompt('Ingrese contraseña');
 function iniciar_sesion(user, password) {
     for(var i=0; i < users.length; i++) {
         if ( user === users[0].user_name && password === users[0].user_password) {
-            alert(final_note[0].note);
+            alert(final_note[0].note); return true
         } else if (user === users[1].user_name && password === users[1].user_password) {
-            alert(final_note[1].note);
+            alert(final_note[1].note); return true
+        } else if (user === users[2].user_name && password === users[2].user_password) {
+            alert(final_note[2].note); return true
+        } else if (user === users[3].user_name && password === users[3].user_password) {
+            alert(final_note[3].note); return true
+        } else if (user === users[4].user_name && password === users[4].user_password) {
+            alert(final_note[4].note); return true
+        } else if (user === users[5].user_name && password === users[5].user_password) {
+            alert(final_note[5].note); return true
         } else {
-            alert('Ups, usuario o contraseña incorrectos')
+            alert("Ups, contraseña incorrecta"); return false
         }
     }
     
